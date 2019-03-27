@@ -5,30 +5,30 @@ let sureste = document.getElementById('sureste')
 
 let cubo = document.getElementById('cubo')
 
-let ejeX = -30
-let ejeY = -30
+let ejeX = 0
+let ejeY = 0
 
 noroeste.addEventListener('click', ()=>{
-    ejeX-= 10
-    ejeY+= 10
-    cubo.style.transform = 'perspective(700px) rotateX(  '+ejeX+'deg ) rotateY(  '+ejeX+'deg )'
+    ejeX+= 10
+    ejeY-= 10
+    cubo.style.transform = 'perspective(700px) rotateX(  '+ejeX+'deg ) rotateY(  '+ejeY+'deg )'
     
 })
 
 noreste.addEventListener('click', ()=> {
     ejeX+= 10
     ejeY+= 10
-    cubo.style.transform = 'perspective(700px) rotateX(  '+ejeX+'deg ) rotateY(  '+ejeX+'deg )'
+    cubo.style.transform = 'perspective(700px) rotateX(  '+ejeX+'deg ) rotateY(  '+ejeY+'deg )'
 })
 
 suroeste.addEventListener('click', ()=> {
     ejeX-= 10
     ejeY-= 10
-    cubo.style.transform = 'perspective(700px) rotateX(  '+ejeX+'deg ) rotateY(  '+ejeX+'deg )'
+    cubo.style.transform = 'perspective(700px) rotateX(  '+ejeX+'deg ) rotateY(  '+ejeY+'deg )'
 })
 
 sureste.addEventListener('click', ()=> {
-    ejeX+= 10
-    ejeY-= 10
-    cubo.style.transform = 'perspective(700px) rotateX(  '+ejeX+'deg ) rotateY(  '+ejeX+'deg )'
+    ejeX-= 10
+    ejeY+= 10
+    cubo.style.transform = 'perspective(700px) rotateX(  '+ejeX+'deg ) rotateY(  '+ejeY+'deg )'
 })
