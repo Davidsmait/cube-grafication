@@ -1,0 +1,29 @@
+.menu{
+    width: 250px;
+}
+
+.opciones {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr)
+}
+
+.opciones li {
+    width: 100px;
+    padding: .7rem;
+    margin: .2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #333;
+    color: #eee;
+    transition: .5s;
+    cursor: pointer;
+
+    }
+
+.opciones li:hover {
+    box-shadow:0 50px indianred inset,
+               0 -50px indianred inset;
+    
+}
