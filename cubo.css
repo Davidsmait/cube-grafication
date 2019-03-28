@@ -1,9 +1,11 @@
 body{
+    user-select: none;
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #eee;
+    margin-top: 50px;
 }
 
 .cubo, .cubo .cara {
@@ -16,9 +18,12 @@ body{
 
 
 .cubo {
+    position: absolute;
+    top: 0;
+    left: 50%;
     margin: 100px auto;
     transform-style: preserve-3d;
-    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
+    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg) ;
     transition: .5s;
 }
 
